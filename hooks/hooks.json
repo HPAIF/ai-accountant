@@ -1,0 +1,16 @@
+{
+  "description": "At session start, shows the AI accountant's memory for this project (deadlines, recent jobs, inbox, stale regulation cards, pending learnings, latest digests) when an ai-team/accountant workspace exists. Silent otherwise.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/session-context.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

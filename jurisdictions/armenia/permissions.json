@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:arlis.am)",
+      "WebFetch(domain:www.arlis.am)",
+      "WebFetch(domain:parliament.am)",
+      "WebFetch(domain:www.parliament.am)",
+      "WebFetch(domain:e-draft.am)",
+      "WebFetch(domain:www.e-draft.am)",
+      "WebFetch(domain:concourt.am)",
+      "WebFetch(domain:www.concourt.am)",
+      "WebFetch(domain:datalex.am)",
+      "WebFetch(domain:www.datalex.am)",
+      "WebFetch(domain:src.am)",
+      "WebFetch(domain:www.src.am)",
+      "WebFetch(domain:petekamutner.am)",
+      "WebFetch(domain:www.petekamutner.am)",
+      "WebFetch(domain:minfin.am)",
+      "WebFetch(domain:www.minfin.am)",
+      "WebFetch(domain:cba.am)",
+      "WebFetch(domain:www.cba.am)",
+      "WebFetch(domain:hightech.gov.am)",
+      "WebFetch(domain:gov.am)",
+      "WebFetch(domain:www.gov.am)",
+      "WebFetch(domain:e-gov.am)",
+      "WebFetch(domain:www.e-gov.am)",
+      "WebFetch(domain:e-register.am)",
+      "WebFetch(domain:www.e-register.am)",
+      "WebFetch(domain:armstat.am)",
+      "WebFetch(domain:www.armstat.am)",
+      "WebFetch(domain:mlsa.am)",
+      "WebFetch(domain:www.mlsa.am)",
+      "WebFetch(domain:docs.eaeunion.org)",
+      "WebFetch(domain:www.ifrs.org)",
+      "Bash(date:*)",
+      "Bash(python3:*)",
+      "Bash(bc:*)"
+    ]
+  }
+}
