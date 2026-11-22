@@ -23,6 +23,13 @@ In Claude Code:
 /plugin install ai-accountant@ai-team
 ```
 
+Or install only this member, straight from its repository:
+
+```
+/plugin marketplace add HPAIF/ai-accountant
+/plugin install ai-accountant@ai-accountant
+```
+
 Then, inside your project, say **"set up the AI accountant"** (or run `/ai-accountant:setup`).
 Setup asks for your jurisdiction and creates a private `ai-team/` folder in the project.
 
