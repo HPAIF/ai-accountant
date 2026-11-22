@@ -4,6 +4,10 @@ All notable changes to the AI accountant. Versions follow semver: **patch** = wo
 source updates · **minor** = new skill, new jurisdiction pack, new workspace file (with a
 migration note for `setup` upgrade mode) · **major** = breaking change to the workspace contract.
 
+## 0.2.4 — 2026-11-23
+- Talk to colleagues only where the founder sees it: no hidden Agent-tool calls; @mention in group
+  chats (one answer, no discussion without the founder); "For @member:" elsewhere.
+
 ## 0.2.3 — 2026-11-23
 - Missed questions: an unanswered question that still matters is repeated briefly under
   "Still open:" at the end of the next answer.
