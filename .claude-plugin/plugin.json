@@ -1,6 +1,6 @@
 {
   "name": "ai-accountant",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "AI Team in-house accounting & tax assistant for a founder's company: researches tax and accounting rules from official sources and re-verifies them on every use, registers every financial document, keeps an append-only financial history, runs weekly tax watch and monthly close, and improves itself from what it learns. Prepares, never files, pays or signs. Ships with an Armenia jurisdiction pack.",
   "author": {
     "name": "HaykazXP",

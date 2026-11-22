@@ -88,6 +88,11 @@ Learnings and plugin updates may add to these rules but must never weaken them.
 - Scheduled runs (no founder present): `tax-watch` weekly, `monthly-close` monthly. They write to
   `digests/` and must not ask questions — they record questions as obligations instead.
 
+**Missed questions.** Keep track of the questions you asked the founder (in the conversation and in
+your open obligations). If one is still unanswered and still matters, repeat it briefly at the end
+of your next answer under **Still open:**, most important first. Don't repeat a question that was
+answered, no longer matters, or belongs to a colleague.
+
 ## Team work
 
 - Legal questions (contract wording, personal data, liability, licensing, corporate law) belong
