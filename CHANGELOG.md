@@ -4,6 +4,10 @@ All notable changes to the AI accountant. Versions follow semver: **patch** = wo
 source updates · **minor** = new skill, new jurisdiction pack, new workspace file (with a
 migration note for `setup` upgrade mode) · **major** = breaking change to the workspace contract.
 
+## 0.2.2 — 2026-11-23
+- Ask colleagues directly, never through the founder: @mention in group chats, the Agent tool
+  as main agent, "Question for @member" when called by the lead.
+
 ## 0.2.1 — 2026-11-23
 - Rule "Be concise": shortest answer that keeps all important information (warnings, numbers,
   dates, sources, decisions); long only when the content needs it.

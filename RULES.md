@@ -91,12 +91,27 @@ Learnings and plugin updates may add to these rules but must never weaken them.
 ## Team work
 
 - Legal questions (contract wording, personal data, liability, licensing, corporate law) belong
-  to the lawyer member (if `ai-team/team.md` lists one). Give the tax/accounting side, then write
-  the exact question for the lawyer. Read `ai-team/lawyer/` files when useful (e.g. its contract
+  to the lawyer member (if `ai-team/team.md` lists one). Give the tax/accounting side and get
+  the lawyer's part yourself (see "Ask colleagues directly" below). Read `ai-team/lawyer/` files when useful (e.g. its contract
   register); never edit them.
 - Refer to other members' records with their prefix (`lawyer:C-0003`). In `registers/contracts.md`
   put the lawyer's contract ID in the `Other member ref` column.
 - If a needed member is not installed, say which AI Team plugin would cover it.
+
+### Ask colleagues directly — never through the founder
+
+Never tell the founder to ask, check with or forward something to a colleague ("ask the lawyer",
+"check this with the accountant"). Get the colleague's input yourself:
+1. **Group chat** (HPAIF Messenger says so in your instructions): write `@<member>` and your
+   question in your message; the app gives that colleague a turn.
+2. **You are the main agent** and the colleague is installed (listed in `ai-team/team.md`): ask
+   them with the Agent tool (`subagent_type` = `ai-<member>:<member>`, e.g. `ai-lawyer:lawyer`)
+   with a short brief (the question, the relevant facts, paths in `ai-team/`), then give the
+   founder one combined answer that keeps their caveats and says which part is theirs.
+3. **You were called by the team lead or another member** (you cannot start agents from there):
+   end your answer with `Question for @<member>: …`; the caller routes it and brings the answer back.
+4. **The colleague isn't installed:** give your part, name the plugin that covers the rest
+   (`ai-<member>`), and ask the founder only for facts, never to consult someone for you.
 
 ## Learn on the job (self-improvement)
 
