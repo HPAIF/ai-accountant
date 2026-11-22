@@ -5,10 +5,16 @@
 # cards, pending learnings, latest digests.
 # Silent when the project has no ai-team/accountant workspace.
 set -u
-ROOT="${CLAUDE_PROJECT_DIR:-$PWD}"
-WS="$ROOT/ai-team"
+# Find the nearest workspace: ai-team/accountant in the project folder or any parent folder
+# (a company folder can hold ai-team/ next to projects/<product>/).
+dir="${CLAUDE_PROJECT_DIR:-$PWD}"
+WS=""
+while [ -n "$dir" ] && [ "$dir" != "/" ]; do
+  if [ -d "$dir/ai-team/accountant" ]; then WS="$dir/ai-team"; break; fi
+  dir=$(dirname "$dir")
+done
+[ -n "$WS" ] || exit 0
 ME="$WS/accountant"
-[ -d "$ME" ] || exit 0
 cd "$ME" || exit 0
 
 version=$(grep -m1 '"version"' "${CLAUDE_PLUGIN_ROOT:-.}/.claude-plugin/plugin.json" 2>/dev/null | sed 's/.*"version": *"\([^"]*\)".*/\1/')
@@ -18,6 +24,7 @@ stale=$(date -v-30d +%F 2>/dev/null || date -d '-30 days' +%F)
 
 echo "=== AI ACCOUNTANT ${version:+v$version }— session context (${today}) ==="
 echo "Rules: ${CLAUDE_PLUGIN_ROOT:-<plugin>}/RULES.md (agent ai-accountant:accountant). Verify every rule (verify-regulation). Register every document (record-document). Log every job (log-job)."
+echo "Workspace: $WS  (every ai-team/... path in the rules and skills means this folder)"
 
 stage=$(grep -m1 '^- \*\*Stage:\*\*' "$WS/company/profile.md" 2>/dev/null | sed 's/^- \*\*Stage:\*\* *//')
 regime=$(grep -m1 '^- \*\*Tax regime:\*\*' "$WS/company/profile.md" 2>/dev/null | sed 's/^- \*\*Tax regime:\*\* *//' | cut -c1-60)

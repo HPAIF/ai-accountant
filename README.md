@@ -12,14 +12,14 @@ watch and a monthly close, and **learns from its work**.
 > prepares a brief so the paid hour is short.
 
 Part of the **AI Team** — separate plugins (lawyer, accountant, more to come) that share one
-private workspace in your project. See [aiagents-factory/ai-team](https://github.com/aiagents-factory/ai-team).
+private workspace in your project. See [HPAIF/ai-team](https://github.com/HPAIF/ai-team).
 
 ## Install
 
 In Claude Code:
 
 ```
-/plugin marketplace add aiagents-factory/ai-team
+/plugin marketplace add HPAIF/ai-team
 /plugin install ai-accountant@ai-team
 ```
 
@@ -31,7 +31,7 @@ To share the setup with a team, add this to the project's `.claude/settings.json
 ```json
 {
   "extraKnownMarketplaces": {
-    "ai-team": { "source": { "source": "github", "repo": "aiagents-factory/ai-team" } }
+    "ai-team": { "source": { "source": "github", "repo": "HPAIF/ai-team" } }
   },
   "enabledPlugins": { "ai-accountant@ai-team": true }
 }
@@ -74,7 +74,7 @@ run happens at next launch):
 | | `learnings.md` — what the accountant learned in *your* company |
 
 The workspace layout is shared with other AI Team members (see the
-[workspace contract](https://github.com/aiagents-factory/ai-team/blob/main/docs/workspace.md)). With
+[workspace contract](https://github.com/HPAIF/ai-team/blob/main/docs/workspace.md)). With
 **ai-lawyer** installed, both read the same company facts, cross-reference contracts
 (`lawyer:C-0003`) and hand questions to each other.
 
