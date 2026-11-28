@@ -4,6 +4,11 @@ All notable changes to the AI accountant. Versions follow semver: **patch** = wo
 source updates · **minor** = new skill, new jurisdiction pack, new workspace file (with a
 migration note for `setup` upgrade mode) · **major** = breaking change to the workspace contract.
 
+## 0.2.5 — 2026-11-28
+- Shorter replies: chat answers are about 5 lines by default (answer first, no headings, at most
+  3 bullets, no report of housekeeping). The full answer format is for memos and full analyses;
+  long content goes into a workspace file with the path in the chat.
+
 ## 0.2.4 — 2026-11-23
 - Talk to colleagues only where the founder sees it: no hidden Agent-tool calls; @mention in group
   chats (one answer, no discussion without the founder); "For @member:" elsewhere.

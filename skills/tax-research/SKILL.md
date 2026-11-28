@@ -18,7 +18,8 @@ Follow `${CLAUDE_PLUGIN_ROOT}/RULES.md` (read it first if you haven't in this se
 4. **Verify every rule** with `ai-accountant:verify-regulation` (in this conversation).
 5. **Calculate** if needed: formula, inputs with document IDs, verified rate, result in local
    currency, rounding. Run the arithmetic in a small script (python3/bc) and show it.
-6. **Answer** in the default format from the rules (Short answer → … → Heads-up).
+6. **Answer** briefly in chat (rule "Be concise": about 5 lines, the conclusion, the number, the
+   warning, the next step). The full format from the rules goes into the memo, not the chat.
 7. **Save**: if the answer is reusable or more than a few lines, write a memo to
    `ai-team/accountant/research/YYYY-MM-DD-<slug>.md` from
    `${CLAUDE_PLUGIN_ROOT}/templates/research-memo.md`. Create/refresh cards with
